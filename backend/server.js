@@ -8,6 +8,7 @@ const port = process.env.PORT || 5000;
 
 connectDB();
 const goalRoutes = require('./routes/goalRoutes');
+const userRoutes = require('./routes/userRoutes');
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api/goals', goalRoutes);
+app.use('/api/users', userRoutes);
 
 // overwrite the default express error handler
 app.use(errorHandler);
