@@ -191,6 +191,11 @@ h3 {
   animation: spin 1.2s linear infinite;
 }
 
+.delete-icon {
+  color: red;
+  font-size: 1.2rem;
+}
+
 @keyframes spin {
   0% {
     transform: rotate(0deg);
